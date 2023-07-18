@@ -1,0 +1,133 @@
+* {
+    position: relative;
+    color: ivory;
+    text-align: center;
+    font-family: "Helvetica Neue";
+    zoom: 95%;
+    word-wrap: break-word;
+    display: flexbox;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logo {
+    height: 188px;
+    width: 250px;
+}
+
+.image {
+
+    height: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    transition: ease-in-out;
+    animation: img 2s;
+    animation-direction: alternate;
+    position: absolute;
+    z-index: -2;
+    left: 90px;
+}
+
+#image1 {
+    padding: 0px;
+    height: 150px;
+    width: 150px;
+    left: 47%;
+    display: flex;
+    flex-wrap: wrap;
+    transition: ease-in-out;
+    animation: img1 2s;
+    animation-direction: alternate;
+    position: relative;
+    z-index: -2;
+}
+
+@keyframes img {
+    0% {
+        transform: translate(0, 200px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes img1 {
+    0% {
+        transform: translate(600%, -80%);
+        height: 100px;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        height: 150px;
+    }
+}
+
+fieldset {
+    position: absolute;
+    z-index: -1;
+    left: 30%;
+    border: 1px solid white;
+    width: 40%;
+    height: 470px;
+    border-radius: 25px;
+    animation-fill-mode: both;
+    animation: border 2s ease-in-out;
+}
+
+@keyframes border {
+    0% {
+        transform: scaleX(0.5)
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+button {
+    position: relative;
+    color: white;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: blue;
+    font-size: 15px;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+input {
+    background-color: black;
+    border: 1px solid white;
+    height: 20px;
+    border-radius: 5px;
+    font-size: 18px;
+
+
+}
+
+table,
+td {
+    margin: auto;
+    text-align: center;
+    padding: 4px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
